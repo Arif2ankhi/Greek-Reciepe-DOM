@@ -77,7 +77,7 @@ function displayRecipes(meals) {
     });
 }
 
-// Requirement: Show loader and open modal with details
+// Requirement:  loader and open modal with details
 async function viewDetails(id) {
     showLoader(true);
     
@@ -101,7 +101,7 @@ async function viewDetails(id) {
 
         showLoader(false);
         recipeModal.classList.remove('hidden');
-        document.body.style.overflow = 'hidden'; // Prevent background scroll
+        document.body.style.overflow = 'hidden'; 
     } catch (error) {
         showLoader(false);
         alert("Could not load recipe details.");
